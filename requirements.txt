@@ -27,6 +27,15 @@ requests>=2.31.0
 matplotlib>=3.7.0
 seaborn>=0.12.0
 
-# Optimisation mémoire
-deepspeed>=0.11.0
-xformers>=0.0.22
+# Optimisation mémoire (optionnel)
+# deepspeed>=0.11.0
+# xformers>=0.0.22
+
+# Collecte de données intelligente
+beautifulsoup4>=4.12.0
+feedparser>=6.0.10
+wikipedia>=1.4.0
+arxiv>=2.1.0
+googlesearch-python>=1.2.3
+aiohttp>=3.9.0
+lxml>=4.9.0

@@ -144,20 +144,82 @@ Le système s'intègre automatiquement avec Weights & Biases pour :
 ## 🛠 Installation et Usage Rapide
 
 ```bash
-# 1. Activer l'environnement
-source venv/bin/activate
+# 1. Configuration automatique du collecteur intelligent
+python setup_collector.py
 
-# 2. Test rapide
-python demo_adaptive.py
+# 2. Démarrage du collecteur autonome
+./start_collector.sh
 
-# 3. Surveillance continue
-python continuous_adaptive.py
+# 3. Surveillance avec interface graphique
+streamlit run dashboard_collector.py
 
-# 4. Déposer vos propres données dans data/incoming/
-# Le système s'adaptera automatiquement !
+# 4. Test de collecte immédiate
+./test_collector.sh
+
+# 5. Monitoring en temps réel
+python monitor_collector.py
 ```
 
+## 🌐 Collecteur Intelligent Autonome
+
+### 🤖 L'IA qui Apprend Seule
+Le système inclut maintenant un **collecteur de données intelligent** qui va automatiquement chercher des informations de qualité sur internet pour nourrir l'apprentissage de votre IA :
+
+#### 📡 Sources Automatiques
+- **Reddit** (r/MachineLearning, r/artificial, r/programming)
+- **ArXiv** (articles scientifiques récents en IA)
+- **Wikipedia** (articles encyclopédiques sur l'IA)
+- **GitHub** (exemples de code et tutoriels)
+- **HuggingFace** (datasets de qualité)
+- **StackOverflow** (Q&A techniques)
+
+#### 🧠 Apprentissage Intelligent
+```bash
+# Collecte + Apprentissage automatique
+python autonomous_collector.py
+
+# Avec domaine spécialisé
+python autonomous_collector.py --domain ai
+python autonomous_collector.py --domain code
+python autonomous_collector.py --domain science
+```
+
+#### 📊 Dashboard de Surveillance
+Interface graphique complète pour surveiller :
+- Collecte en temps réel
+- Qualité des données
+- Progression de l'apprentissage
+- Statistiques détaillées
+
 ## 🎮 Commandes Interactive
+
+### 🤖 Collecteur Autonome
+```bash
+# Démarrage rapide
+./start_collector.sh
+
+# Collecte par domaine spécialisé
+python autonomous_collector.py --domain ai      # Intelligence Artificielle
+python autonomous_collector.py --domain code    # Programmation
+python autonomous_collector.py --domain science # Recherche scientifique
+
+# Monitoring et statistiques
+python monitor_collector.py
+```
+
+### 📊 Interface Graphique
+```bash
+# Dashboard interactif
+streamlit run dashboard_collector.py
+```
+
+### ⚙️ Configuration Avancée
+```bash
+# Configuration personnalisée
+python autonomous_collector.py \
+  --collection-interval 4 \    # Collecte toutes les 4h
+  --learning-interval 8        # Apprentissage toutes les 8h
+```
 
 En mode surveillance continue :
 - `stats` - Voir les statistiques
@@ -206,7 +268,14 @@ En mode surveillance continue :
 - 🌐 **Apprentissage distribué** (plusieurs sources)
 - 🎨 **Adaptation de style** plus fine
 - 🔐 **Apprentissage privé** (données sensibles)
+- 🌍 **Collecte multilingue** automatique
+- 🔄 **Apprentissage par renforcement** selon les retours
+- 📱 **Sources sociales** (Twitter, LinkedIn)
+- 🎥 **Données audiovisuelles** (YouTube, podcasts)
+- 🚀 **Déploiement cloud** automatique
 
 ---
 
 *Le système d'apprentissage adaptatif représente une nouvelle approche de l'IA : au lieu de programmer des comportements spécifiques, nous créons une intelligence capable d'observer, d'imiter et de s'adapter naturellement à tout nouvel environnement de données.*
+
+*Avec le collecteur intelligent, votre IA devient véritablement **autonome** : elle explore internet 24h/24, trouve des données de qualité, et s'améliore continuellement sans intervention humaine.*

@@ -1,0 +1,29 @@
+{
+  "collection_settings": {
+    "default_interval_hours": 6,
+    "learning_interval_hours": 12,
+    "max_items_per_source": 100,
+    "quality_threshold": 0.6
+  },
+  "data_sources": {
+    "reddit": {
+      "enabled": true
+    },
+    "arxiv": {
+      "enabled": true
+    },
+    "wikipedia": {
+      "enabled": true
+    },
+    "github": {
+      "enabled": true
+    },
+    "huggingface": {
+      "enabled": true
+    }
+  },
+  "learning": {
+    "auto_trigger": true,
+    "min_new_items": 10
+  }
+}

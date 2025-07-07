@@ -39,3 +39,7 @@ arxiv>=2.1.0
 googlesearch-python>=1.2.3
 aiohttp>=3.9.0
 lxml>=4.9.0
+peft 
+accelerate 
+scipy 
+scikit-learn

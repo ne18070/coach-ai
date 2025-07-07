@@ -99,6 +99,7 @@ def setup_directories():
         Path(directory).mkdir(parents=True, exist_ok=True)
     
     print("✅ Répertoires configurés")
+    return True
 
 
 def create_config_files():
@@ -134,6 +135,7 @@ def create_config_files():
             json.dump(config, f, indent=2, ensure_ascii=False)
     
     print("✅ Configuration créée")
+    return True
 
 
 def create_startup_scripts():
@@ -213,6 +215,7 @@ streamlit run dashboard_collector.py --server.port 8501
     os.chmod("start_dashboard.sh", 0o755)
     
     print("✅ Scripts de démarrage créés")
+    return True
 
 
 def run_initial_test():

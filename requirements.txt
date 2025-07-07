@@ -1,0 +1,32 @@
+# Dépendances principales pour le fine-tuning
+torch>=2.0.0
+transformers>=4.35.0
+datasets>=2.14.0
+peft>=0.6.0
+accelerate>=0.24.0
+bitsandbytes>=0.41.0
+scipy>=1.11.0
+scikit-learn>=1.3.0
+
+# Traitement des données
+pandas>=2.0.0
+numpy>=1.24.0
+tqdm>=4.65.0
+
+# Configuration et logging
+pyyaml>=6.0
+wandb>=0.16.0
+tensorboard>=2.14.0
+
+# Interface utilisateur
+gradio>=3.50.0
+streamlit>=1.28.0
+
+# Utilitaires
+requests>=2.31.0
+matplotlib>=3.7.0
+seaborn>=0.12.0
+
+# Optimisation mémoire
+deepspeed>=0.11.0
+xformers>=0.0.22

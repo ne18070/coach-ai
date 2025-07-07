@@ -1,0 +1,14 @@
+[
+  {
+    "instruction": "Explique-moi comment fonctionne un réseau de neurones",
+    "response": "Un réseau de neurones artificiels est composé de couches de neurones interconnectés. Chaque neurone reçoit des signaux d'entrée, les traite avec une fonction d'activation, et transmet le résultat aux neurones suivants. L'apprentissage se fait en ajustant les poids des connexions pour minimiser l'erreur entre les prédictions et les résultats attendus."
+  },
+  {
+    "instruction": "Comment créer un modèle de machine learning ?",
+    "response": "Pour créer un modèle de ML : 1) Collecter et nettoyer les données, 2) Choisir l'algorithme approprié, 3) Diviser les données en ensembles d'entraînement et de test, 4) Entraîner le modèle, 5) Évaluer les performances, 6) Optimiser les hyperparamètres, 7) Déployer le modèle."
+  },
+  {
+    "instruction": "Qu'est-ce que l'overfitting et comment l'éviter ?",
+    "response": "L'overfitting se produit quand un modèle mémorise les données d'entraînement au lieu d'apprendre des patterns généralisables. Pour l'éviter : utiliser plus de données, appliquer la régularisation, faire de la validation croisée, utiliser le dropout, et arrêter l'entraînement avant la convergence complète."
+  }
+]

@@ -1,0 +1,10 @@
+[
+  {
+    "instruction": "Explique ce qu'est l'intelligence artificielle",
+    "response": "L'intelligence artificielle est un domaine de l'informatique qui vise à créer des machines capables de simuler l'intelligence humaine."
+  },
+  {
+    "instruction": "Décris le processus d'entraînement d'un modèle ML",
+    "response": "L'entraînement consiste à ajuster les paramètres d'un modèle en utilisant des données d'exemple pour qu'il puisse faire des prédictions précises."
+  }
+]

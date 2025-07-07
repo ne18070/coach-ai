@@ -1,0 +1,39 @@
+def fibonacci(n):
+    """Calcule le n-ième nombre de Fibonacci"""
+    if n <= 1:
+        return n
+    return fibonacci(n-1) + fibonacci(n-2)
+
+class NeuralNetwork:
+    """Simple réseau de neurones"""
+    def __init__(self, layers):
+        self.layers = layers
+        self.weights = []
+    
+    def forward(self, x):
+        """Propagation avant"""
+        for layer in self.layers:
+            x = layer.activate(x)
+        return x
+    
+    def train(self, data, epochs):
+        """Entraînement du réseau"""
+        for epoch in range(epochs):
+            for sample in data:
+                self.backpropagate(sample)
+
+# Fonction pour normaliser les données
+def normalize_data(data):
+    """Normalise les données entre 0 et 1"""
+    min_val = min(data)
+    max_val = max(data)
+    return [(x - min_val) / (max_val - min_val) for x in data]
+
+# Exemple d'utilisation
+if __name__ == "__main__":
+    data = [1, 2, 3, 4, 5]
+    normalized = normalize_data(data)
+    print(f"Données normalisées: {normalized}")
+    
+    # Test Fibonacci
+    print(f"Fibonacci(10): {fibonacci(10)}")

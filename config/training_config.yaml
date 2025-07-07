@@ -1,0 +1,87 @@
+# Configuration de fine-tuning
+model:
+  name: "microsoft/DialoGPT-medium"  # Modèle de base à fine-tuner
+  cache_dir: "./models/cache"
+  max_length: 512
+  
+# Configuration LoRA
+lora:
+  enabled: true
+  r: 16                   # Rang de la décomposition LoRA
+  alpha: 32               # Paramètre de scaling LoRA
+  dropout: 0.1            # Dropout pour LoRA
+  target_modules:         # Modules à adapter
+    - "c_attn"
+    - "c_proj"
+    - "c_fc"
+
+# Configuration des données
+data:
+  train_file: "data/processed/train.json"
+  validation_file: "data/processed/validation.json"
+  test_file: "data/processed/test.json"
+  max_train_samples: null     # null = utiliser tous les échantillons
+  max_eval_samples: 1000
+  preprocessing_num_workers: 4
+
+# Configuration d'entraînement
+training:
+  output_dir: "./models/finetuned"
+  num_train_epochs: 3
+  per_device_train_batch_size: 4
+  per_device_eval_batch_size: 8
+  gradient_accumulation_steps: 4
+  learning_rate: 2e-4
+  weight_decay: 0.01
+  warmup_ratio: 0.1
+  lr_scheduler_type: "cosine"
+  
+  # Sauvegarde
+  save_strategy: "steps"
+  save_steps: 500
+  save_total_limit: 3
+  
+  # Évaluation
+  evaluation_strategy: "steps"
+  eval_steps: 250
+  load_best_model_at_end: true
+  metric_for_best_model: "eval_loss"
+  greater_is_better: false
+  
+  # Logging
+  logging_dir: "./logs"
+  logging_steps: 50
+  report_to: ["tensorboard"]  # ["wandb", "tensorboard"]
+  
+  # Optimisations
+  fp16: true                  # Utiliser la précision mixte
+  dataloader_num_workers: 4
+  remove_unused_columns: false
+  
+  # Early stopping
+  early_stopping:
+    enabled: true
+    patience: 3
+    threshold: 0.001
+
+# Configuration pour l'inférence
+inference:
+  max_new_tokens: 256
+  temperature: 0.7
+  top_p: 0.9
+  top_k: 50
+  do_sample: true
+  pad_token_id: 50256
+
+# Monitoring
+wandb:
+  project: "llm-finetuning"
+  entity: null              # Votre nom d'utilisateur W&B
+  name: null                # Nom de l'expérience (auto si null)
+  tags: ["fine-tuning", "lora"]
+
+# Configuration système
+system:
+  seed: 42
+  device: "auto"            # "auto", "cuda", "cpu"
+  mixed_precision: "fp16"   # "fp16", "bf16", "no"

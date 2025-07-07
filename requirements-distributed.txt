@@ -1,0 +1,11 @@
+# Configuration pour l'entraînement distribué (optionnel)
+deepspeed>=0.11.0
+torch-distributed>=0.1.0
+mpi4py>=3.1.0
+
+# Support pour les GPU multiples
+nccl>=2.18.0
+
+# Optimisations avancées
+flash-attn>=2.3.0
+triton>=2.1.0

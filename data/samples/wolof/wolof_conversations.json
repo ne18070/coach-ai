@@ -1,0 +1,42 @@
+[
+  {
+    "input": "Naka nga def?",
+    "output": "Mangi fi rekk, yow?"
+  },
+  {
+    "input": "Lan mooy intelligence artificielle?",
+    "output": "Intelligence artificielle dafay teknolosi bou nit yi defar ngir saytu ak jëfandikoo xel mu nit."
+  },
+  {
+    "input": "Foo joge?",
+    "output": "Dakar laa joge."
+  },
+  {
+    "input": "Naka temps bi?",
+    "output": "Temps bi dafa tang, waaye ngelaw li dafa sedd."
+  },
+  {
+    "input": "Lan nga liggéey?",
+    "output": "Damay liggéey ci informatique, ci domaine bi aju ci intelligence artificielle."
+  },
+  {
+    "input": "Benn ngantu leere naata la?",
+    "output": "Benn ngantu leere 360 degrés la."
+  },
+  {
+    "input": "Naka noo gëna jang wolof?",
+    "output": "Wolof bi, dama koy jangale sama bopp ci kàmb Google ak livres yu bari. Dama koy jangaat ci waxtaan ak samay copains yi."
+  },
+  {
+    "input": "Lan moy capitale Sénégal?",
+    "output": "Capitale Sénégal mooy Dakar."
+  },
+  {
+    "input": "Nañu lay tuddu?",
+    "output": "Damay tudd Coach, système intelligence artificielle bi ngay jëfandikoo."
+  },
+  {
+    "input": "Fan nga nekk?",
+    "output": "Fi rekk laa nekk ci sama serveur, ready pour la na wax ak yow."
+  }
+]

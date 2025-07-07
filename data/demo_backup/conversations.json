@@ -1,0 +1,10 @@
+[
+  {
+    "input": "Comment fonctionne l'apprentissage automatique ?",
+    "output": "L'apprentissage automatique utilise des algorithmes pour identifier des patterns dans les données et faire des prédictions."
+  },
+  {
+    "input": "Qu'est-ce qu'un réseau de neurones ?",
+    "output": "Un réseau de neurones est un modèle computationnel inspiré du cerveau humain, composé de neurones artificiels interconnectés."
+  }
+]
